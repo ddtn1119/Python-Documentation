@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Technical Documentation</title>
+  </head>
+  <link rel="stylesheet" href="styles.css">
+  <body>
+    <nav id="navbar">
+        <header><h1>Python Documentation</h1></header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Installation">Installation</a>
+        <a class="nav-link" href="#Python_Basics">Python Basics</a>
+        <a class="nav-link" href="#Functions_and_Modules">Functions and Modules</a>
+        <a class="nav-link" href="#Object-Oriented_Programming">Object-Oriented Programming</a>
+        <a class="nav-link" href="#File_Handling">File Handling</a>
+        <a class="nav-link" href="#Error_Handling">Error Handling</a>
+        <a class="nav-link" href="#Useful_Libraries">Useful Libraries</a>
+        <a class="nav-link" href="#Conclusion">Conclusion</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header><h3>Introduction</h3></header>
+        <p>This document provides an overview of Python, its key features, and how to effectively use it for software development.</p>
+      </section>
+      <section class="main-section" id="Installation">
+        <header><h3>Installation</h3></header>
+        <p>Python can be installed from the official website <a href="https://www.python.org/downloads/Python.org" target="_blank">Python.org</a>. It is available for Windows, macOS, and Linux.</p>
+        <p>Steps to install Python:</p>
+        <p><ol>
+          <li>Download the latest version from the official website.</li>
+          <li>Run the installer and follow the instructions.</li>
+          <li>Ensure you check the box "Add Python to PATH" during installation.</li>
+          <li>Verify the installation using the command: <code>python --version</code></li>
+        </ol></p>
+      </section>
+      <section class="main-section" id="Python_Basics">
+        <header><h3>Python Basics</h3></header>
+        <p>Python is a dynamically typed, high-level programming language known for its readability and simplicity.</p>
+        <h4>Variables and Data Types</h4>
+        <p><code>
+          name = "Alice"  # String<br>
+          age = 25  # Integer<br>
+          height = 5.7  # Float<br>
+          is_student = True  # Boolean<br>
+        </code></p>
+        <h4>Control Structures</h4>
+        <h5>Conditional Statements</h5>
+        <p><code>
+          if age > 18:<br>
+          &nbsp print("Adult")<br>
+          else:<br>
+          &nbsp print("Minor")<br>
+        </code></p>
+        <h5>Loops</h5>
+        <p><code>
+          for i in range(5):<br>
+          &nbsp print(i)<br>
+          while age < 30:<br>
+          &nbsp age += 1<br>
+        </code></p>
+      </section>
+      <section class="main-section" id="Functions_and_Modules">
+        <header><h3>Functions and Modules</h3></header>
+        <h4>Defining Functions</h4>
+        <p><code>
+          def greet(name):<br>
+          &nbsp return f"Hello, {name}!"<br>
+        </code></p>
+        <h4>Importing Modules</h4>
+        <p><code>
+          import math<br>
+          print(math.sqrt(16))<br>
+        </code></p>
+      </section>
+      <section class="main-section" id="Object-Oriented_Programming">
+        <header><h3>Object-Oriented Programming</h3></header>
+        <p>Python supports OOP principles such as encapsulation, inheritance, and polymorphism.</p>
+        <h4>Classes and Objects</h4>
+        <p><code>
+          class Person:<br>
+          &nbsp def __init__(self, name, age):<br>
+          &nbsp &nbsp self.name = name<br>
+          &nbsp &nbsp self.age = age<br>
+          &nbsp def introduce(self):<br>
+          &nbsp &nbsp return f"My name is {self.name} and I am {self.age} years old."<br>
+        </code></p>
+      </section>
+      <section class="main-section" id="File_Handling">
+        <header><h3>File Handling</h3></header>
+        <p>Python allows reading and writing files easily.</p>
+        <h4>Reading to a file:</h4>
+        <p><code>
+          with open("example.txt", "r") as file:<br>
+    &nbsp content = file.read()<br>
+        </code></p>
+        <h4>Writing to a file:</h4>
+        <p><code>
+          with open("example.txt", "w") as file:<br>
+    &nbsp file.write("Hello, World!")<br>
+        </code></p>
+      </section>
+      <section class="main-section" id="Error_Handling">
+        <header><h3>Error Handling</h3></header>
+        <p>Python provides exception handling using <code>try-except</code> blocks.</p>
+        <p><code>
+          try:<br>
+          &nbsp x = 10 / 0<br>
+          except ZeroDivisionError:<br>
+          &nbsp print("Cannot divide by zero!")<br>
+        </code></p>
+      </section>
+      <section class="main-section" id="Useful_Libraries">
+        <header><h3>Useful Libraries</h3></header>
+        <p><ul>
+          <li><b>NumPy</b>: Numerical computing</li>
+          <li><b>Pandas</b>: Data analysis</li>
+          <li><b>Matplotlib</b>: Data visualization</li>
+          <li><b>Requests</b>: HTTP requests</li>
+          <li><b>Flask/Django</b>: Web development</li>
+        </ul></p>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header><h3>Conclusion</h3></header>
+        <p>Python is a versatile language suitable for various applications, including web development, data science, and automation. Mastering its features can greatly enhance software development efficiency.</p>
+      </section>
+    </main>
+  </body>
+</html>
